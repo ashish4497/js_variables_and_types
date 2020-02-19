@@ -130,12 +130,26 @@ Take the value of `marks` (0-100) from user using `prompt` and `alert` the messa
 ```js
 // Your code goes here
 ```
-var mark = prompt("enter the marks 0-100");
-switch(Number(mark)) {
+var mark = Number(prompt("enter the marks 0-100"));
+switch(true) {
   case (mark > 90):
    alert("AA");
    break;
-    case (mark >= 80):
+   case (mark > 80 && mark <= 80):
    alert("AB");
    break;
+   case (mark > 70 && mark <= 70):
+   alert("BC");
+   break;
+   case (mark > 60 && mark <= 60):
+   alert("CC");
+   break;
+   case (mark > 50 && mark <= 50):
+   alert("CD");
+   break;
+   case (mark > 40 && mark <= 40):
+   alert("DD");
+   break;
+  default :
+  alert("FF")
 }
