@@ -69,13 +69,27 @@ Solve this using logical operations. (<, >, &&, ||)
 ```js
 var johnAge = 45;
 var markAge = 35;
-
+if (johnAge > markAge  ||  markAge < johnAge){
+  console.log("elder")
+}
 // Check who is older eithe John or Mark
 // Check who is younger
+if ( markAge < johnAge  ||  johnAge > markAge ){
+  console.log("yonger")
+}
 // Check if their age is equal
+if (johnAge == markAge  ||  markAge == johnAge){
+  console.log("equl")
+} else {
+    console.log("not equal")
+}
 // Create a new variable and assign the age of john to new variable.
 // Check if john is equal to or greater then mark.
 // Check if john is less then or equal to mark.
-
 // Calculate the average age of john and mark and assign to a new variable.
+let newAge = johnAge;
+if(newAge >= markAge || newAge<= markAge){
+  var avg = newAge + markAge;
+console.log(avg)
+}
 ```

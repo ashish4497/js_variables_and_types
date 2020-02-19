@@ -43,6 +43,15 @@ let isGuestOneVeg = false;
 let isGuestTwoVeg = false;
 // Your code goes here
 ```
+if(isGuestOneVeg &&  isGuestTwoVeg){
+  console.log("Only offer up vegan dishes.")
+}
+
+if(isGuestOneVeg ||  isGuestTwoVeg){
+  console.log("Only offer up vegan dishes.")
+} else {
+  console.log("Offer up anything on the menu")
+}
 
 
 3. 🎖Using the variable `temperature` and logical operators do the following
@@ -53,6 +62,13 @@ let isGuestTwoVeg = false;
 let temperature = 4;
 // Your code goes here
 ```
+if(temperature<32){
+  alert("It is freezing outside")
+} else if (temperature>110) {
+  alert("It is hot outside")
+} else {
+  alert('Go for it. It is pretty nice out')
+}
 
 4. 🎖 Output of this and the reason behind the output.
 ```js
