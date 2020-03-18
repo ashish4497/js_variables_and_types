@@ -5,32 +5,32 @@
 * [ ] Logical AND operation
 
 ```js
-true  && true; //output
-true  && false;
-false && true;
-false && false;
-"foo" && "bar";
-"bar" && "foo";
-"foo" && "";
-""    && "foo";
-" "   && "John" && "" && false
-false && "Hey" && undefined
-"undefined" && false && 42
+true  && true; //output true
+true  && false; //false
+false && true; //false
+false && false; //false
+"foo" && "bar"; //bar
+"bar" && "foo"; //foo
+"foo" && "";  //""
+""    && "foo"; // ""
+" "   && "John" && "" && false // ""
+false && "Hey" && undefined //false
+"undefined" && false && 42 //false
 ```
 
 * [ ] Logical OR operation
 ```js
-true  || true;
-true  || false;
-false || true;
-false || false;
-"foo" || "bar";
-"bar" || "foo";
-"foo" || "";
-""    || "foo";
-" "   || "John" || "" || false
-false || "Hey" || undefined
-"undefined" || false || 42
+true  || true; //true
+true  || false; //true
+false || true; //true
+false || false; //false
+"foo" || "bar"; //foo
+"bar" || "foo"; //bar
+"foo" || "";  //foo
+""    || "foo"; //foo
+" "   || "John" || "" || false //" "
+false || "Hey" || undefined //hey
+"undefined" || false || 42  //"undefiend"
 ```
 
 2. 🥈You have two variables i.e `isGuestOneVeg` and  `isGuestTwoVeg` according to the value using logical && and || opeartor do the following.
@@ -43,6 +43,15 @@ let isGuestOneVeg = false;
 let isGuestTwoVeg = false;
 // Your code goes here
 ```
+if(isGuestOneVeg &&  isGuestTwoVeg){
+  console.log("Only offer up vegan dishes.")
+}
+
+if(isGuestOneVeg ||  isGuestTwoVeg){
+  console.log("Only offer up vegan dishes.")
+} else {
+  console.log("Offer up anything on the menu")
+}
 
 
 3. 🎖Using the variable `temperature` and logical operators do the following
@@ -53,6 +62,13 @@ let isGuestTwoVeg = false;
 let temperature = 4;
 // Your code goes here
 ```
+if(temperature<32){
+  alert("It is freezing outside")
+} else if (temperature>110) {
+  alert("It is hot outside")
+} else {
+  alert('Go for it. It is pretty nice out')
+}
 
 4. 🎖 Output of this and the reason behind the output.
 ```js
